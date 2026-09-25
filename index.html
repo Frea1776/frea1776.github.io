@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,8 +83,8 @@ header{
     display:flex;
     align-items:center;
     background:
-    linear-gradient(rgba(20,20,20,.50),rgba(20,20,20,.50)),
-    url("images/hero.jpg") center/cover no-repeat;
+    linear-gradient(rgba(20,20,20,.60),rgba(20,20,20,.60)),
+    url("https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?q=80&w=1920&auto=format&fit=crop") center/cover no-repeat;
     color:white;
 }
 
@@ -352,6 +351,21 @@ section{
     margin-bottom:10px;
 }
 
+.contact-details p{
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+.contact-details a{
+    color:#222;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact-details a:hover{
+    text-decoration:underline;
+}
+
 .socials{
     margin-top:25px;
 }
@@ -361,6 +375,7 @@ section{
     text-decoration:none;
     margin-right:20px;
     font-size:14px;
+    font-weight:bold;
 }
 
 /* FOOTER */
@@ -517,7 +532,7 @@ Spaces & Structures
 <p>
 Architectural and Civil Engineering portfolio showcasing
 AutoCAD drawings, building plans, sections, elevations,
-3D visualization and design projects.
+3D visualization, estimation and design projects.
 </p>
 
 <div class="hero-buttons">
@@ -563,18 +578,18 @@ AutoCAD drawings, building plans, sections, elevations,
 
 <p>
 I am a Civil Engineering student interested in architectural
-design, civil engineering, CAD drafting and 3D visualization.
+design, civil engineering, CAD drafting, cost estimation and 3D visualization.
 </p>
 
 <p>
 My portfolio focuses on practical building design,
 AutoCAD drafting, floor plans, sections, elevations,
-interior and exterior visualization.
+quantity surveying, cost estimation, interior and exterior visualization.
 </p>
 
 <p>
 I enjoy transforming ideas and sketches into clear,
-professional and functional drawings.
+professional and functional drawings along with accurate material estimation.
 </p>
 
 
@@ -585,6 +600,8 @@ professional and functional drawings.
 <div class="skill">Enscape</div>
 <div class="skill">Architectural Design</div>
 <div class="skill">Civil Engineering</div>
+<div class="skill">Construction Estimation</div>
+<div class="skill">Costing & Valuation</div>
 <div class="skill">3D Visualization</div>
 
 </div>
@@ -629,6 +646,10 @@ AutoCAD
 
 <button class="filter-btn" onclick="filterProjects('civil')">
 Civil Engineering
+</button>
+
+<button class="filter-btn" onclick="filterProjects('estimation')">
+Estimation & Costing
 </button>
 
 <button class="filter-btn" onclick="filterProjects('3d')">
@@ -727,10 +748,30 @@ onclick="openImage('images/project4.jpg')">
 
 <!-- PROJECT 5 -->
 
-<div class="project 3d"
+<div class="project estimation civil"
 onclick="openImage('images/project5.jpg')">
 
 <img src="images/project5.jpg">
+
+<div class="project-info">
+
+<small>Estimation & Costing</small>
+
+<h3>Building Quantity Estimation</h3>
+
+<p>Detailed quantity take-off, material calculation, and cost estimation.</p>
+
+</div>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+
+<div class="project 3d"
+onclick="openImage('images/project6.jpg')">
+
+<img src="images/project6.jpg">
 
 <div class="project-info">
 
@@ -745,12 +786,12 @@ onclick="openImage('images/project5.jpg')">
 </div>
 
 
-<!-- PROJECT 6 -->
+<!-- PROJECT 7 -->
 
 <div class="project interior 3d"
-onclick="openImage('images/project6.jpg')">
+onclick="openImage('images/project7.jpg')">
 
-<img src="images/project6.jpg">
+<img src="images/project7.jpg">
 
 <div class="project-info">
 
@@ -765,12 +806,12 @@ onclick="openImage('images/project6.jpg')">
 </div>
 
 
-<!-- PROJECT 7 -->
+<!-- PROJECT 8 -->
 
 <div class="project architecture"
-onclick="openImage('images/project7.jpg')">
+onclick="openImage('images/project8.jpg')">
 
-<img src="images/project7.jpg">
+<img src="images/project8.jpg">
 
 <div class="project-info">
 
@@ -779,26 +820,6 @@ onclick="openImage('images/project7.jpg')">
 <h3>Residential Design</h3>
 
 <p>Complete architectural concept and planning.</p>
-
-</div>
-
-</div>
-
-
-<!-- PROJECT 8 -->
-
-<div class="project autocad"
-onclick="openImage('images/project8.jpg')">
-
-<img src="images/project8.jpg">
-
-<div class="project-info">
-
-<small>AutoCAD</small>
-
-<h3>Detailed Floor Plan</h3>
-
-<p>Dimensioned CAD floor plan and layout.</p>
 
 </div>
 
@@ -882,6 +903,20 @@ dimensions, annotations and clean presentation.
 
 <span class="service-number">03</span>
 
+<h3>Construction Estimation</h3>
+
+<p>
+Detailed quantity takeoff, material calculation,
+rate analysis, and budget estimation for construction projects.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<span class="service-number">04</span>
+
 <h3>3D Visualization</h3>
 
 <p>
@@ -894,7 +929,7 @@ and interior visualization.
 
 <div class="service">
 
-<span class="service-number">04</span>
+<span class="service-number">05</span>
 
 <h3>Civil Engineering</h3>
 
@@ -908,27 +943,13 @@ and engineering documentation.
 
 <div class="service">
 
-<span class="service-number">05</span>
-
-<h3>Interior Design</h3>
-
-<p>
-Interior planning, furniture layouts,
-3D modeling and visualization.
-</p>
-
-</div>
-
-
-<div class="service">
-
 <span class="service-number">06</span>
 
-<h3>Exterior Design</h3>
+<h3>Interior & Exterior Design</h3>
 
 <p>
-Building facade concepts, materials,
-landscape ideas and 3D rendering.
+Interior planning, furniture layouts, building facade concepts,
+materials, and 3D rendering.
 </p>
 
 </div>
@@ -991,11 +1012,11 @@ architectural concepts.
 
 <span>03</span>
 
-<h3>Develop</h3>
+<h3>Develop & Estimate</h3>
 
 <p>
-Create detailed CAD drawings and
-3D models.
+Create detailed CAD drawings, quantity estimates,
+and 3D models.
 </p>
 
 </div>
@@ -1008,7 +1029,7 @@ Create detailed CAD drawings and
 <h3>Present</h3>
 
 <p>
-Prepare clean drawings, renders and
+Prepare clean drawings, cost breakdown reports, renders and
 professional presentation.
 </p>
 
@@ -1048,17 +1069,21 @@ Have a project in mind?
 
 <p>
 I'm interested in architectural drafting,
-civil engineering drawings, CAD projects
+civil engineering drawings, construction estimation, CAD projects
 and 3D visualization.
 </p>
 
-<p>
-📍 Ghorahi, Dang, Nepal
-</p>
+<div class="contact-details" style="margin-top: 20px;">
+<p>📍 Location: Ghorahi, Dang, Nepal</p>
+<p>📧 Email: <a href="mailto:neupanehimal05@gmail.com">neupanehimal05@gmail.com</a></p>
+<p>💬 WhatsApp: <a href="https://wa.me/9779769260505" target="_blank">+977 9769260505</a></p>
+</div>
 
 <div class="socials">
 
-<a href="#" target="_blank">Facebook</a>
+<a href="https://facebook.com" target="_blank">Facebook</a>
+
+<a href="https://wa.me/9779769260505" target="_blank">WhatsApp</a>
 
 <a href="#" target="_blank">YouTube</a>
 
@@ -1075,14 +1100,19 @@ and 3D visualization.
 
 <p>
 For project inquiries, freelance work,
-or collaboration, feel free to contact me.
+or collaboration, feel free to contact me directly via Email or WhatsApp.
 </p>
 
 <br>
 
-<a href="mailto:your-email@example.com" class="btn"
+<a href="https://wa.me/9779769260505" class="btn"
+style="background:#25D366;color:white;border-color:#25D366;margin-bottom:10px;">
+Chat on WhatsApp
+</a>
+
+<a href="mailto:neupanehimal05@gmail.com" class="btn"
 style="background:#222;color:white;border-color:#222;">
-Email Me
+Send Email
 </a>
 
 </div>
@@ -1183,4 +1213,3 @@ document.addEventListener("keydown",function(e){
 
 </body>
 </html>
-```
